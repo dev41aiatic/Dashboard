@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-ng-b6b52": {
+      "hosting": {
+        "login": [
+          "login-ng-b6b52"
+        ]
+      }
+    }
+  }
+}
