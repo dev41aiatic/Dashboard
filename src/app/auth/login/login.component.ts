@@ -22,8 +22,14 @@ export class LoginComponent implements OnInit {
 
   constructor(private authSvc: AuthService, private router: Router) { }
 
-  ngOnInit(): void {
+  onGoogleLogin(){
+    //debe ir al service
+    try{this.authSvc.loginGoogle();}
+    catch(error){console.log(error)}
+    
   }
+
+  ngOnInit(): void {}
 
    async onLogin(){
     const {email, password} = this.loginForm.value;
